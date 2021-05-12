@@ -1,0 +1,429 @@
+*,:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+scroll-behavior: smooth;}
+  
+   
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    cursor: pointer;
+}
+#navbar::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.logo p {
+    font-family:  nunito,sans-serif;
+    color:#faca2c;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/*Logo*/
+.logo{
+    padding: 4px;
+    margin: 4px 29px;
+    text-align: center;
+}
+.logo img{
+    width: 71px;
+    height: 64px;
+    padding: 6px;
+
+}
+
+/* Navbar items */
+ul{
+    display: flex;
+    margin: 3px 65px;
+}
+
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    padding: 23px 34px;
+    font-family: "Nunito", sans-serif;
+    font-size: 19px;
+    display: block;
+    transition: transform;
+    color: white;
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    transform: scale(1.1);
+}
+a:visited, .active{
+    color:#faca2c;
+} 
+ 
+/* Right buttons */
+.btn{
+    margin: 4px;
+    padding: 11px;
+    border-radius: 5px;
+    border-color: white;
+    color: white;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    cursor: pointer;
+}
+.btn-primary{
+    background-color: #89ba16;
+    border-color: #89ba16;
+
+}
+.btn-primary:hover{
+    background-color: rgb(91, 121, 32) ;
+    border-color: rgb(91, 121, 32);
+}
+.btn-outline{
+    border-color:white;
+    color: #fff;
+    background-color: rgb(100, 84 , 72,1);
+    border-color: rgb(100, 84 , 72,1);
+    opacity: 0.95;
+    /* font-weight: bold; */
+}
+
+/* HOME SECTION */
+#home{
+        padding: 12px 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 665px;
+    
+    
+}
+
+#home::before {
+    content: "";
+    background: url("images/luca-bravo-9l_326FISzk-unsplash.jpg") no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    top: 0px;
+    z-index: -1;
+    opacity: 1;
+}
+
+#home h1 {
+    color: #f3f3f3;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
+
+#home p {
+    font-size: 1.5rem;
+    color:#fbfbfb;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+     font-weight: bold;
+
+}
+
+.h-primary {
+    font-size: 3rem;
+    padding: 12px;
+    font-family: "Nunito", sans-serif;
+
+}
+
+#input-home{
+    display: flex;
+    padding: 18px 11px;
+    margin: 7px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+}
+.home-btn{
+    height: calc(2em + 1rem + 2px);
+    padding: 8px 16px;
+     margin: 18px 19px;
+    margin-bottom: 6px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    border-color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.search{
+    background-color: #89ba16 ;
+    border: #89ba16;
+}
+.search:hover{
+    background-color: rgb(91, 121, 32);
+}
+#example .below-input{
+    font-size: 13px;
+    position: relative;
+    top: 0px;
+    right: 335px;
+}
+
+
+
+/* Job cards */
+/* #jobcard{
+    background-color: yellowgreen;
+} */
+
+#services{
+    display: flex;
+    margin: 34px;
+    
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
+.boxservice{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 24px;
+    background: #edeefd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.boxservice img{
+    height: 100px;
+    display: block;
+    margin: 7px auto
+    
+}
+.boxservice p{
+    text-align: center;
+   font-family: "Nunito", sans-serif;
+ 
+}
+
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+}
+
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    margin: 7px 1px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+  /* next an previous button */
+  .nextprev{
+    margin-top: 176px;
+    margin-left: 5px;
+    float: left;
+    height: 34px;
+    padding: 9px;
+    background: cadetblue;
+    cursor: pointer;
+}
+
+.nextprev:hover{
+    background-color: teal;
+}
+
+
+
+
+
+/* footer */
+.footer{
+    padding: 4.5rem 0;
+    position: relative;
+    background: #555;
+    display: block;
+}
+.footer .scroll-top {
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #8c8c8c;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+}
+.footer .scroll-top>span {
+    position: absolute;
+    font-size: 2rem;
+    top: 5px;
+    left: 16px;
+}
+
+.footer a {
+    color: rgba(255,255,255,.5);
+}
+
+/* @media (min-width: 992px){
+.container {
+    max-width: 960px;
+}}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+
+
+
+/* Footer coloumns */
+
+#colbar{
+    display: flex;
+    text-align: center;
+    justify-content: center
+}
+#col-1{
+    
+    margin: 19px;
+    padding: 12px;
+}
+#col-2{
+    
+    margin: 19px;
+    padding: 12px;
+}
+#col-3{
+    
+    margin: 19px;
+    padding: 12px;
+}
+#col-4{
+    
+    margin: 19px;
+    padding: 12px;
+}
+.ulcol{
+    display: flex;
+    flex-direction: column;
+}
+.ulcol li{
+    text-align: center;
+    color:#b5b5b4;
+}
+
+.h-column{
+    padding: 10px;
+    padding-top: 0px;
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+.searchitems{
+    text-align: center;
+    padding: 12px;
+    font-family: "Nunito", sans-serif;
+}
+.copyright{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    color:#b5b5b4;
+
+}
+
+/*Icons*/
+.fa {
+    padding: 9px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  border-radius: 10px;
+}
+
+.fa-twitter {
+  background: #1f9eff;
+  color: white;
+  border-radius: 10px;
+}
+
+
+.fa-linkedin {
+  background:#0060c3;
+  color: white;
+  border-radius: 10px;
+}
+
+
+
+.fa-instagram {
+    background: linear-gradient(45deg, rgb(231, 27, 27), rgb(107, 0, 128));
+    border-radius: 10px;
+  color: white;
+}
+
+.searchicon{
+        padding: 0px;
+        width: 34px;
+        font-size: 23px;
+        margin: 2px 3px;
+}
+
+
+
+
+/* utility class */
+.center{
+    text-align: center;
+}
+
+
+/* Burger */
+.burger{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 15px;
+    cursor: pointer;
+}
+.line{
+    width: 33px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 3px;
+}
